@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+    <!-- hello world program using html -->
+    <h2>Hello World Using HTML</h2>
+
+    <!-- hello world program using javascript -->
+    <div id="root"></div>
+    <script>
+        const heading=document.createElement('h2');
+        heading.innerHTML='Hello World Using Javascript';
+        let root=document.getElementById('root');
+        root.appendChild(heading);
+    </script>
+
+    <!-- hello world program using react -->
+    <!-- this is the first way of using react -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <div id="root2"></div>
+    <script>
+        const heading2=React.createElement('h2',{},"Hello World Program Using React");
+        console.log(heading2); // it will return an object;
+        const root2=ReactDOM.createRoot(document.getElementById('root2'));
+        root2.render(heading2); // it convert the react code into html and put on the dom;
+    </script>
+
+    <div id="root3"></div>
+    <div id="root4"></div>
+    <div id="root5"></div>
+    <div id="root6"></div>
+    <div id="root7">
+        <h2>reactreactreactreactreactreactreactreactreactreactreactreactreactreactreact</h2>
+    </div>
+
+    <script src="./App.js"></script>
+
+</body>
+</html>
